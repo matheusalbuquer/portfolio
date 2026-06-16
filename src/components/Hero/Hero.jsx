@@ -1,13 +1,25 @@
-import foto from "../../assets/imgs/minha-foto.png";
-import { FaJava, FaJs, FaPython, FaReact } from "react-icons/fa";
+import foto from "../../assets/imgs/minha-foto01.png";
+import {
+  FaJava,
+  FaJs,
+  FaPython,
+  FaReact,
+  FaArrowRight,
+  FaRegCommentDots,
+} from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiSpringboot } from "react-icons/si";
 
 function Hero() {
   return (
-    <section className="bg-gradient-to-br flex items-center justify-between from-slate-950 via-slate-900 to-violet-900 text-white py-16">
-      <div className="container mx-auto px-4 flex items-center justify-between gap-2">
-        <div className="mb-30">
+    <section
+      className="bg-gradient-to-br flex items-center justify-between bg-gradient-to-r
+from-[#020617]
+via-[#030712]
+to-[#341244] text-white py-10"
+    >
+      <div className="container mx-auto px-8 flex items-start justify-between gap-4">
+        <div className="mb-2">
           <p className="text-left text-sm uppercase font-bold text-violet-500 tracking-widest mb-2">
             Olá, eu sou
           </p>
@@ -15,12 +27,12 @@ function Hero() {
             Matheus Albuquerque
           </h1>
           <h2 className="text-lg font-bold text-left mb-8">
-            Desenvolvedor full-stack
+            Desenvolvedor Full Stack
           </h2>
 
           <p className="text-left max-w-2xl  text-gray-300 mb-">
             Formado em Análise e Desenvolvimento de Sistemas, Apaixonado por
-            tecnologia desde os 7 anos. Desenolvendo soluções robustas e
+            tecnologia desde os 7 anos. Desenvolvendo soluções robustas e
             eficientes, com foco em qualidade e inovação. Tenho experiência em
             diversas tecnologias, incluindo Java, Spring Boot, JavaScript,
             React.js, Node.js e Python. Meu objetivo é transformar ideias em
@@ -52,13 +64,25 @@ function Hero() {
               PYTHON
             </p>
           </div>
+
+          <div className="mt-8 flex gap-4">
+            <button className="bg-violet-500 hover:bg-violet-600 text-white font-bold py-3 px-6 rounded flex items-center gap-2">
+              Ver Projetos
+              <FaArrowRight size={14} />
+            </button>
+
+            <button className="border border-violet-500 text-white font-bold py-3 px-6 rounded flex items-center gap-2">
+              Entre em contato
+              <FaRegCommentDots size={14} />
+            </button>
+          </div>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 relative right-16">
           <img
             src={foto}
             alt="Matheus Albuquerque"
-            className="w-80 h-96 object-cover flex justify-left rounded-2xl border border-violet-500/30"
+            className="w-70 h-76 object-cover rounded-2xl border-1 border-violet-500/30"
           />
         </div>
       </div>
