@@ -8,8 +8,10 @@ function Navbar() {
       className="fixed top-0 left-0 w-full z-50 flex items-center justify-between h-16 bg-gray-900 text-white px-4"
     >
       <div className="flex justify-start gap-2">
-        <img src={logo} alt="Logo" className="h-10 w-12" />
-        <h3 className="text-lg font-bold mt-1">Matheus Albuquerque</h3>
+        <img src={logo} alt="Logo" className="h-8 w-10 md:h-10 md:w-12" />
+        <h3 className="hidden md:block text-lg font-bold mt-1">
+          Matheus Albuquerque
+        </h3>
       </div>
 
       <div className="flex gap-6 justify-center">
@@ -42,7 +44,7 @@ function Navbar() {
         </a>
       </div>
 
-      <div className="flex justify-end">
+      <div className="hidden md:flex justify-end">
         <a
           className="bg-violet-500 hover:bg-violet-600 flex items-center text-white font-bold py-2 px-2 rounded"
           href="/curriculum.pdf"

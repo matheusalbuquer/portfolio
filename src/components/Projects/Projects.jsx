@@ -18,13 +18,34 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden"
+              className="
+      group
+      bg-slate-900/50
+      border
+      border-slate-800
+      rounded-2xl
+      overflow-hidden
+      transition-all
+      duration-500
+      hover:-translate-y-3
+      hover:border-violet-500/50
+      hover:shadow-[0_0_30px_rgba(139,92,246,0.25)]
+      "
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="
+                w-full
+                h-48
+                object-cover
+                transition-transform
+                duration-700
+                group-hover:scale-110
+                 "
+                />
+              </div>
 
               <div className="p-5">
                 <h3 className="text-xl font-bold mb-3">{project.title}</h3>
@@ -35,7 +56,18 @@ function Projects() {
                   {project.stacks.map((stack, index) => (
                     <span
                       key={index}
-                      className="bg-slate-800 px-3 py-1 rounded text-sm"
+                      className="
+                    bg-slate-800
+                    px-3
+                    py-1
+                    rounded
+                    text-sm
+                    transition-all
+                    duration-300
+                    hover:bg-violet-500
+                    hover:text-white
+                    hover:scale-105
+                    "
                     >
                       {stack}
                     </span>
@@ -47,7 +79,18 @@ function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 border border-violet-500 rounded-lg py-2 text-center"
+                    className="
+                        flex-1
+                        border
+                        border-violet-500
+                        rounded-lg
+                        py-2
+                        text-center
+                        transition-all
+                        duration-300
+                        hover:bg-violet-500
+                        hover:text-white
+                        "
                   >
                     GitHub
                   </a>
@@ -56,7 +99,18 @@ function Projects() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 bg-violet-600 rounded-lg py-2 text-center"
+                    className="
+                    flex-1
+                    bg-violet-600
+                    rounded-lg
+                    py-2
+                    text-center
+                    transition-all
+                    duration-300
+                    hover:bg-violet-500
+                    hover:scale-105
+                    hover:shadow-[0_0_20px_rgba(139,92,246,0.5)]
+                    "
                   >
                     Demo
                   </a>
