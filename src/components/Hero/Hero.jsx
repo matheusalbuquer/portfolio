@@ -5,7 +5,7 @@ import {
   FaPython,
   FaReact,
   FaArrowRight,
-  FaRegCommentDots,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiSpringboot } from "react-icons/si";
@@ -39,29 +39,136 @@ function Hero() {
             React.js, Node.js e Python. Meu objetivo é transformar ideias em
             realidade por meio do código.
           </p>
-          <div className="flex flex-wrap gap-2 mt-4">
-            <p className="flex items-center gap-2 border border-violet-500 text-orange-500 py-2 px-4 rounded-lg">
-              <FaJava size={20} />
+          <div className="flex flex-wrap gap-3 mt-4">
+            <p
+              className="
+      group flex items-center gap-2
+      border border-violet-500/40
+      text-orange-500
+      py-2 px-4 rounded-lg
+      cursor-pointer
+      transition-all duration-300
+      hover:bg-slate-900/80
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-orange-500
+      hover:shadow-[0_0_20px_rgba(249,115,22,0.35)]
+    "
+            >
+              <FaJava
+                size={20}
+                className="transition-all duration-300 group-hover:rotate-12 group-hover:scale-125"
+              />
               JAVA
             </p>
-            <p className="flex items-center gap-2 border border-violet-500 text-green-600 py-2 px-4 rounded-lg">
-              <SiSpringboot size={20} />
+
+            <p
+              className="
+      group flex items-center gap-2
+      border border-violet-500/40
+      text-green-500
+      py-2 px-4 rounded-lg
+      cursor-pointer
+      transition-all duration-300
+      hover:bg-slate-900/80
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-green-500
+      hover:shadow-[0_0_20px_rgba(34,197,94,0.35)]
+    "
+            >
+              <SiSpringboot
+                size={20}
+                className="transition-all duration-300 group-hover:rotate-12 group-hover:scale-125"
+              />
               SPRING BOOT
             </p>
-            <p className="flex items-center gap-2 border border-violet-500 text-yellow-500 py-2 px-4 rounded-lg">
-              <FaJs size={20} />
+
+            <p
+              className="
+                group flex items-center gap-2
+                border border-violet-500/40
+                text-yellow-500
+                py-2 px-4 rounded-lg
+                cursor-pointer
+                transition-all duration-300
+                hover:bg-slate-900/80
+                hover:-translate-y-1
+                hover:scale-105
+                hover:border-yellow-400
+                hover:shadow-[0_0_20px_rgba(250,204,21,0.35)]
+           "
+            >
+              <FaJs
+                size={20}
+                className="transition-all duration-300 group-hover:rotate-12 group-hover:scale-125"
+              />
               JAVASCRIPT
             </p>
-            <p className="flex items-center gap-2 border border-violet-500 text-blue-500 py-2 px-4 rounded-lg">
-              <FaReact size={20} />
+
+            <p
+              className="
+      group flex items-center gap-2
+      border border-violet-500/40
+      text-cyan-400
+      py-2 px-4 rounded-lg
+      cursor-pointer
+      transition-all duration-300
+      hover:bg-slate-900/80
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-cyan-400
+      hover:shadow-[0_0_20px_rgba(34,211,238,0.35)]
+    "
+            >
+              <FaReact
+                size={20}
+                className="transition-all duration-300 group-hover:rotate-[180deg] group-hover:scale-125"
+              />
               REACT.JS
             </p>
-            <p className="flex items-center gap-2 border border-violet-500 text-green-500 py-2 px-4 rounded-lg">
-              <FaNodeJs size={20} />
+
+            <p
+              className="
+      group flex items-center gap-2
+      border border-violet-500/40
+      text-green-400
+      py-2 px-4 rounded-lg
+      cursor-pointer
+      transition-all duration-300
+      hover:bg-slate-900/80
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-green-400
+      hover:shadow-[0_0_20px_rgba(74,222,128,0.35)]
+    "
+            >
+              <FaNodeJs
+                size={20}
+                className="transition-all duration-300 group-hover:rotate-12 group-hover:scale-125"
+              />
               NODE.JS
             </p>
-            <p className="flex items-center gap-2 border border-violet-500 text-blue-400 py-2 px-4 rounded-lg">
-              <FaPython size={20} />
+
+            <p
+              className="
+      group flex items-center gap-2
+      border border-violet-500/40
+      text-blue-400
+      py-2 px-4 rounded-lg
+      cursor-pointer
+      transition-all duration-300
+      hover:bg-slate-900/80
+      hover:-translate-y-1
+      hover:scale-105
+      hover:border-blue-400
+      hover:shadow-[0_0_20px_rgba(96,165,250,0.35)]
+    "
+            >
+              <FaPython
+                size={20}
+                className="transition-all duration-300 group-hover:rotate-12 group-hover:scale-125"
+              />
               PYTHON
             </p>
           </div>
@@ -92,28 +199,39 @@ function Hero() {
             </button>
 
             <a
-              href="https://wa.me/55984220414?text=Olá%20Matheus,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar."
+              href="https://wa.me/5581984220414?text=Olá%20Matheus,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar."
               target="_blank"
               rel="noopener noreferrer"
               className="
-              border
-              border-violet-500
-              hover:bg-violet-500/10
-              hover:border-violet-400
-              text-white
-              font-semibold
-              py-3
-              px-6
-              rounded-xl
-              flex
-              items-center
-              gap-2
-              transition-all
-              duration-300
-  "
+                group
+                border
+                border-violet-500
+                hover:border-green-500
+                hover:bg-green-500/10
+                text-white
+                font-semibold
+                py-3
+                px-6
+                rounded-xl
+                flex
+                items-center
+                gap-2
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:shadow-[0_0_20px_rgba(34,197,94,0.35)]
+"
             >
               Entre em contato
-              <FaRegCommentDots size={14} />
+              <FaWhatsapp
+                size={18}
+                className="
+                  text-green-500
+                  transition-all
+                  duration-300
+                  group-hover:scale-125
+                "
+              />
             </a>
           </div>
         </div>

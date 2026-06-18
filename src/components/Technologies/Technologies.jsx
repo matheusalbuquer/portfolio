@@ -63,22 +63,46 @@ to-[#030349] text-white py-20"
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold mb-8">Tecnologias que utilizo</h2>
 
-        <div className="flex flex-wrap gap-4">
+        <div className="flex md:hidden gap-4 overflow-x-auto pb-4 scrollbar-hide">
           {techs.map((tech) => (
             <div
               key={tech.name}
               className="
-            w-20 h-20
-            bg-slate-900
-            border border-violet-500/20
-            rounded-xl
-            flex
-            items-center
-            justify-center
-            hover:border-violet-500
-            hover:-translate-y-1
-            transition-all
-          "
+        min-w-[80px]
+        h-20
+        bg-slate-900
+        border border-violet-500/20
+        rounded-xl
+        flex
+        items-center
+        justify-center
+        shrink-0
+        hover:border-violet-500
+        hover:-translate-y-1
+        transition-all
+      "
+            >
+              {tech.icon}
+            </div>
+          ))}
+        </div>
+
+        <div className="hidden md:flex flex-wrap gap-4">
+          {techs.map((tech) => (
+            <div
+              key={tech.name}
+              className="
+        w-20 h-20
+        bg-slate-900
+        border border-violet-500/20
+        rounded-xl
+        flex
+        items-center
+        justify-center
+        hover:border-violet-500
+        hover:-translate-y-1
+        transition-all
+      "
             >
               {tech.icon}
             </div>
