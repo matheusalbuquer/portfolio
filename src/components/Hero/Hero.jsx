@@ -68,6 +68,7 @@ function Hero() {
 
           <div className="mt-8 flex gap-4">
             <button
+              href="#projects"
               className="
           bg-gradient-to-r
           from-violet-600
@@ -90,28 +91,30 @@ function Hero() {
               <FaArrowRight size={14} />
             </button>
 
-            <button
+            <a
+              href="https://wa.me/55984220414?text=Olá%20Matheus,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar."
+              target="_blank"
+              rel="noopener noreferrer"
               className="
-
-                  border
-                  border-violet-500
-                  hover:bg-violet-500/10
-                  hover:border-violet-400
-                  text-white
-                  font-semibold
-                  py-3
-                  px-6
-                  rounded-xl
-                  flex
-                  items-center
-                  gap-2
-                  transition-all
-                  duration-300
-                "
+              border
+              border-violet-500
+              hover:bg-violet-500/10
+              hover:border-violet-400
+              text-white
+              font-semibold
+              py-3
+              px-6
+              rounded-xl
+              flex
+              items-center
+              gap-2
+              transition-all
+              duration-300
+  "
             >
               Entre em contato
               <FaRegCommentDots size={14} />
-            </button>
+            </a>
           </div>
         </div>
 
@@ -124,8 +127,8 @@ function Hero() {
             alt="Matheus Albuquerque"
             className="
             relative
-            w-56
-            h-64
+            w-48
+            h-56
             sm:w-64
             sm:h-72
             md:w-72
