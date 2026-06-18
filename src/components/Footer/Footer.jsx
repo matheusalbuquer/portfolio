@@ -3,6 +3,7 @@ import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
     <footer
+      id="footer"
       className="bg-[#081426] py-8
      text-white"
     >

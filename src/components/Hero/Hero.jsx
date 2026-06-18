@@ -13,17 +13,18 @@ import { SiSpringboot } from "react-icons/si";
 function Hero() {
   return (
     <section
+      id="hero"
       className="bg-gradient-to-br flex items-center justify-between bg-gradient-to-r
 from-[#020617]
 via-[#030712]
-to-[#341244] text-white py-10"
+to-[#341244] text-white py-20"
     >
       <div className="container mx-auto px-8 flex items-start justify-between gap-4">
         <div className="mb-2">
           <p className="text-left text-sm uppercase font-bold text-violet-500 tracking-widest mb-2">
             Olá, eu sou
           </p>
-          <h1 className="text-4xl font-bold text-left  mb-4">
+          <h1 className="text-5xl font-extrabold tracking-tight text-white">
             Matheus Albuquerque
           </h1>
           <h2 className="text-lg font-bold text-left mb-8">

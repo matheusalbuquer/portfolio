@@ -3,19 +3,43 @@ import { FaDownload } from "react-icons/fa";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between h-16 bg-gray-900 text-white px-4">
+    <nav
+      id="inicio"
+      className="fixed top-0 left-0 w-full z-50 flex items-center justify-between h-16 bg-gray-900 text-white px-4"
+    >
       <div className="flex justify-start gap-2">
         <img src={logo} alt="Logo" className="h-10 w-12" />
         <h3 className="text-lg font-bold mt-1">Matheus Albuquerque</h3>
       </div>
 
       <div className="flex gap-6 justify-center">
-        <a className=" hover:text-purple-300 " href="#home">
-          Inicio
+        <a
+          href="#hero"
+          className="relative transition-all duration-300 hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          Início
         </a>
-        <a href="#Projects">Projetos</a>
-        <a href="#Technologies">Tecnologias</a>
-        <a href="#Contact">Contato</a>
+
+        <a
+          href="#projects"
+          className="relative transition-all duration-300 hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          Projetos
+        </a>
+
+        <a
+          href="#technologies"
+          className="relative transition-all duration-300 hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          Tecnologias
+        </a>
+
+        <a
+          href="#footer"
+          className="relative transition-all duration-300 hover:text-violet-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          Contato
+        </a>
       </div>
 
       <div className="flex justify-end">
